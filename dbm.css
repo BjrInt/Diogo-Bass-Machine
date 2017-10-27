@@ -42,7 +42,7 @@ main h1 .bigger{
 }
 
 .darken{
-  transform: scale(.2);
+  transform: scale(.2) rotate(360deg);
 }
 
 .enter{
