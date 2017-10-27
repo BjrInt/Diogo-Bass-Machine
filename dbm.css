@@ -1,0 +1,71 @@
+body{
+  background: url(bg.png) no-repeat center top, linear-gradient(to top, #bb2e2e, #e83920);
+  height : 100vh;
+  width : 100vw;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  color : #f0b550;
+  transition: 1s;
+}
+
+::selection{
+  background-color: #f0b550;
+  color: #000;
+}
+::-moz-selection{
+  background-color: #f0b550;
+  color: #000;
+}
+
+main{
+  display: flex;
+  text-align: center;
+  margin : auto;
+  padding : 25px;
+  height: 100%;
+  width : 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1{
+  color : inherit;
+  font-size: 5vmax;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 0.85em
+}
+
+main h1 .bigger{
+  font-size: 125%;
+}
+
+.darken{
+  transform: scale(.2);
+}
+
+.enter{
+  display: inline-block;
+  padding: 5px;
+  text-transform: uppercase;
+  border : 1px solid #f0b550;
+  border-radius: 5px;
+}
+
+#nameinput{
+  border : 0;
+  border-bottom : 2px solid #000;
+  background: transparent;
+  padding : 5px 0 8px 0;
+  font-size: 3vmax;
+  width : 100%;
+  text-align: center;
+  transition: .5s;
+}
+
+#nameinput:focus{
+  color : #f0b550;
+  border-bottom: 5px solid #f0b550;
+  padding-bottom : 5px;
+}

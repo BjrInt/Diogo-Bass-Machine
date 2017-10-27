@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="dbm.css">
+  <title>Diogo Bass Machine</title>
+</head>
+
+<body>
+  <main>
+    <section>
+        <h1>Diogo Bass<br>
+        <span class="bigger">Machine</span></h1>
+
+        <p>Rentre ton nom ci-dessous et soumets le à la puissance de la Diogo Bass Machine!</p>
+
+        <input type="text" id="nameinput" />
+
+        <p>Appuie sur <span class="enter">enter</span> quand t'as fini, sale schlag!</p>
+    </section>
+  </main>
+
+  <script src="tone.min.js" charset="utf-8"></script>
+  <script src="dbm.js" charset="utf-8"></script>
+
+  <script type="text/javascript">
+    function D(){
+      if(document.querySelector('body').className.length == 0)
+        document.querySelector('body').className = 'darken';
+      else
+        document.querySelector('body').className = '';
+    }
+  </script>
+</body>
+</html>
